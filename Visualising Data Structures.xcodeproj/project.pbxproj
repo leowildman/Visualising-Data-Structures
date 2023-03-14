@@ -14,6 +14,9 @@
 		CA7B418729C0C8360096635F /* Visualising_Data_StructuresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B418629C0C8360096635F /* Visualising_Data_StructuresTests.swift */; };
 		CA7B419129C0C8360096635F /* Visualising_Data_StructuresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B419029C0C8360096635F /* Visualising_Data_StructuresUITests.swift */; };
 		CA7B419329C0C8360096635F /* Visualising_Data_StructuresUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B419229C0C8360096635F /* Visualising_Data_StructuresUITestsLaunchTests.swift */; };
+		CA7B41A129C0C9A90096635F /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B41A029C0C9A90096635F /* StackView.swift */; };
+		CA7B41A329C0C9BC0096635F /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B41A229C0C9BC0096635F /* QueueView.swift */; };
+		CA7B41A529C0C9C80096635F /* LinkedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7B41A429C0C9C80096635F /* LinkedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		CA7B418C29C0C8360096635F /* Visualising Data StructuresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Visualising Data StructuresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7B419029C0C8360096635F /* Visualising_Data_StructuresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualising_Data_StructuresUITests.swift; sourceTree = "<group>"; };
 		CA7B419229C0C8360096635F /* Visualising_Data_StructuresUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualising_Data_StructuresUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA7B41A029C0C9A90096635F /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		CA7B41A229C0C9BC0096635F /* QueueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueView.swift; sourceTree = "<group>"; };
+		CA7B41A429C0C9C80096635F /* LinkedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,8 @@
 		CA7B417429C0C8330096635F /* Visualising Data Structures */ = {
 			isa = PBXGroup;
 			children = (
+				CA7B419F29C0C97F0096635F /* Views */,
 				CA7B417529C0C8330096635F /* Visualising_Data_StructuresApp.swift */,
-				CA7B417729C0C8330096635F /* ContentView.swift */,
 				CA7B417929C0C8360096635F /* Assets.xcassets */,
 				CA7B417B29C0C8360096635F /* Preview Content */,
 			);
@@ -125,6 +131,17 @@
 				CA7B419229C0C8360096635F /* Visualising_Data_StructuresUITestsLaunchTests.swift */,
 			);
 			path = "Visualising Data StructuresUITests";
+			sourceTree = "<group>";
+		};
+		CA7B419F29C0C97F0096635F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA7B417729C0C8330096635F /* ContentView.swift */,
+				CA7B41A029C0C9A90096635F /* StackView.swift */,
+				CA7B41A229C0C9BC0096635F /* QueueView.swift */,
+				CA7B41A429C0C9C80096635F /* LinkedListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +276,9 @@
 			files = (
 				CA7B417829C0C8330096635F /* ContentView.swift in Sources */,
 				CA7B417629C0C8330096635F /* Visualising_Data_StructuresApp.swift in Sources */,
+				CA7B41A329C0C9BC0096635F /* QueueView.swift in Sources */,
+				CA7B41A129C0C9A90096635F /* StackView.swift in Sources */,
+				CA7B41A529C0C9C80096635F /* LinkedListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LinkedListView.swift
 //  Visualising Data Structures
 //
 //  Created by Wildman, Leo (RCH) on 14/03/2023.
@@ -7,15 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LinkedListView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Linked List!")
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LinkedListView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LinkedListView()
     }
 }
