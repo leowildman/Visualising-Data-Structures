@@ -7,19 +7,32 @@
 
 import Foundation
 
-class Stack<T> : ObservableObject{
-    @Published public var elements = [T]()
+struct stackElement : Identifiable{
+    var id = UUID()
     
-    func push(_ element: T) {
+    let value:String
+    var blurred:Bool
+}
+
+class Stack : ObservableObject{
+    @Published public var elements = [stackElement]()
+    
+    init(){
+        elements.append(stackElement(value:"Bottom", blurred: true))
+        elements.append(stackElement(value:"Middle", blurred:true))
+        elements.append(stackElement(value:"Top", blurred:true))
+    }
+    
+    func push(_ element: stackElement) {
         elements.append(element)
     }
     
-    func pop() -> T? {
-        return elements.popLast()
+    func pop() -> stackElement{
+        return (elements.popLast() ?? stackElement(value: "", blurred: true))
     }
     
-    func peek() -> T? {
-        return elements.last
+    func peek() -> stackElement{
+        return (elements.last ?? stackElement(value: "", blurred: true))
     }
     
     func isEmpty() -> Bool {
@@ -34,7 +47,7 @@ class Stack<T> : ObservableObject{
         elements.removeAll()
     }
     
-    func getAll() -> Array<T>{
+    func getAll() -> Array<stackElement>{
         return elements
     }
 }
